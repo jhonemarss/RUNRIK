@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans" ,sans-serif;
+}
+.BGPIC{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(Black.jpg);
+    background-size: cover;
+}
+.BAR {
+    width: 85%;
+    margin: auto;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.LOGOPIC {
+    width: 120px;
+    cursor: pointer;
+    border-radius: 20%;
+    opacity: .9;
+}
+
+.BAR ul li {
+    list-style: none;
+    display: inline-block;
+    margin:  20px;
+    position: relative;
+
+}
+
+.BAR ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.BAR ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: yellow;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 1s;
+}
+.BAR ul li:hover::after{
+    width: 100%;
+}
+.about{
+    width: 100%;
+    height: 59.8vh;
+    padding: 100px 0px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),  url(peaky1.jpg);;
+}
+.about img{
+    height: auto;
+    width: 400px;
+    border-radius: 250px;
+}
+.abt{
+    width: 550px;
+}
+.main{
+    width: 1600px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.abt h2{
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.abt h5{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.abt p{
+    color: white;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+    
+}
